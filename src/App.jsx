@@ -1,7 +1,6 @@
 import {React} from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import NotFound from "./components/NotFound";
 import ProfileGallery from "./components/ProfileGallery"
 import SetupDate from "./components/SetupDate"
 import {BrowserRouter, Routes, Route, Outlet} from "react-router-dom";
