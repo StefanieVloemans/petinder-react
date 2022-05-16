@@ -23,7 +23,7 @@ function SetupDate() {
                             <div className="clearfix">
                                 <div className="pull-left dialog-picture">
                                     <img
-                                        src={`http://localhost:8080/${transferStateFromParentToChild.image}`}
+                                        src={`https://petinder-react.herokuapp.com/${transferStateFromParentToChild.image}`}
                                         className={"profile-picture"}
                                         alt="pet"
                                     />

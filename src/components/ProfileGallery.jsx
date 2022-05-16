@@ -34,7 +34,7 @@ function ProfileGallery() {
                         .map((pet) =>
                             (
                                 <div className="gallery-pet fader" key={pet.id} onClick={() => transferStateFromParentToChild({pet})}>
-                                    <img className="profile-picture" src={`http://localhost:8080/${pet.image}`}
+                                    <img className="profile-picture" src={`https://petinder-react.herokuapp.com/${pet.image}`}
                                          alt="pet-picture"/>
                                     <div className="overlay">
                                         <div className="overlay-text">{pet.name}</div>
