@@ -10,8 +10,8 @@ export async function addPet(newPet) {
     await client.post('pets', newPet);
 }
 
-export function deletePet(petIdOfPetToDelete) {
-    client.delete('pets/' + petIdOfPetToDelete);
+export async function deletePet(petIdOfPetToDelete) {
+    await client.delete('pets/' + petIdOfPetToDelete);
 }
 
 export async function increasePopularity(petName) {
