@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React} from "react";
 import {deletePet} from "../api/PetService";
 import {Link} from 'react-router-dom';
 
@@ -11,8 +11,7 @@ function PetInformation({transferStateFromParentToChild, triggerParentUpdate, re
 
     }
 
-     const [popularity, setPopularity] = useState(0);
-
+     // const [popularity, setPopularity] = useState(0);
     // let navigate = useNavigate();
     // const navigateToSetupDate = () => { navigate() }
 
