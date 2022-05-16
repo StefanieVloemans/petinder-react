@@ -34,8 +34,7 @@ function ProfileGallery() {
                         .map((pet) =>
                             (
                                 <div className="gallery-pet fader" key={pet.id} onClick={() => transferStateFromParentToChild({pet})}>
-                                    <img className="profile-picture" src={`https://petinder-react.herokuapp.com/${pet.image}`}
-                                         alt="pet-picture"/>
+                                    <img className="profile-picture" src={`https://petinder-react.herokuapp.com/` + pet.image}/>
                                     <div className="overlay">
                                         <div className="overlay-text">{pet.name}</div>
                                     </div>
@@ -61,14 +60,13 @@ function ProfileGallery() {
                         </section>
                     </div>
                 </div>
-                <AddPet triggerParentUpdate = {setComponentState}></AddPet>
+                <AddPet triggerParentUpdate = {setComponentState} />
                 {selectedPet
                     && (
                         <PetInformation
                             transferStateFromParentToChild = {selectedPet}
                             triggerParentUpdate={setComponentState}
-                            resetSelectedPet = {setSelectedPet}></PetInformation>
-
+                            resetSelectedPet = {setSelectedPet} />
                     )
                 }
             </div>
