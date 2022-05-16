@@ -18,7 +18,7 @@ function App() {
                         <Routes>
                             <Route exact path="/" element={<ProfileGallery />} />
                             <Route exact path="/setup-date" element={<SetupDate />} />
-                            <Route component = {NotFound} />
+                            {/*<Route component = {NotFound} />*/}
                         </Routes>
                     </BrowserRouter>
                     <Outlet />
